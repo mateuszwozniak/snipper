@@ -1,0 +1,20 @@
+# immadiately invoked function expression
+snippet iife
+(function (${2}) {${3}}(${1}));
+
+# if () 
+snippet if 
+if (${1:true}) {
+    ${2}
+}
+
+snippet cls 
+var ${1:className} = Ext.extend(SomeBaseClass);
+${1}.prototype = {
+    ${2}: function () {
+		console.log('I am ', '${2}');
+	}
+}
+
+snippet var
+var ${1:name} = ${2:value};
