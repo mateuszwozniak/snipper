@@ -8,12 +8,9 @@ if (${1:true}) {
     ${2}
 }
 
-snippet cls 
-var ${1:className} = Ext.extend(SomeBaseClass);
-${1}.prototype = {
-    ${2}: function () {
-		console.log('I am ', '${2}');
-	}
+# for loop
+for (var ${1:i} = 0; ${1} < ${2:array}.length; ${1}++) {
+	${2}[${1}];
 }
 
 snippet var
